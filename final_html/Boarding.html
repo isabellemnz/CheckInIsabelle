@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<title>Fly With Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.myLink {display: none}
+</style>
+<body class="w3-light-grey">
+
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-border-bottom w3-xlarge">
+  <a href="main-page.html" class="w3-bar-item w3-button w3-text-black"><b>Fly With Us Airlines</b></a>
+  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"></a>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px; background-color:#FFEEEE">
+    <div class="w3-bar w3-#F98866">
+<button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');">Boarding Details</button>    </div>
+
+    <!-- Tabs -->
+    <div id="Flight" class="w3-container w3-padding-16 myLink" style="background-color: #FFEEEE">
+
+<!-- Page content -->
+<h3><center><b>Boarding Information</b></center></h3>
+<p><center><img src="https://img.icons8.com/color/96/000000/box-important.png"></center></p>
+
+<div class="row">
+  <div class="column" style="background-color: #FFEEEE;"><center>
+    <p>1. The actual boarding gate number may be varied with that shown in the online check-in system. Please check with the airport Flight Information Display System or information counter for inquiries. Under circumstances such as flight cancellation or combined flight, seat arrangement would be subjected to charge. Please kindly follow the arrangement offered by our airport staff.</p>
+  </div></center>
+  <div class="column" style="background-color: #FFEEEE;"><center>
+    <p>2. Passengers who have baggage to check-in, please make sure you do not put laptop computer, cash, or other valuable articles in your baggages.</p>
+  </div></center>
+  <div class="column" style="background-color: #FFEEEE;"><center>
+    <p>3. Passenger who have transacted online check-in but could not continue the journey, please cancel the seat one hour prior to flight departure via Fly With Me website www.fwmairlines.com, otherwise would be considered as "on-board".</p>
+  </div></center>
+  <div class="column" style="background-color: #FFEEEE;"><center>
+    <p>4. Passengers who have transacted online check-in of international flight, please contact Fly With Me check-in counters in person one hour prior to flight departure to acquire formal boarding pass.</p>
+  </div></center>
+  <div class="column" style="background-color: #FFEEEE;"><center>
+    <p>5. To all passengers who will not use web or app check-in, please go to G6, online check-in counter, to get boarding pass.</p>
+  </div></center>
+  <div class="column" style="background-color: #FFEEEE;"><center>
+    <p>6. To all passengers, please go to G6 counter, to drop off your baggage.</p>
+  </div></center>
+</div>
+<br>
+<!-- End page content -->
+<center><p><a href="FAQS.html" button class="w3-button" style="background-color: #F98866">Back</button></a></center>
+
+<!-- Footer -->
+<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+  <h5><a href="FAQS.html">FAQS</a></h5>
+  <div class="w3-xlarge w3-padding-16">
+  </div>
+</footer>
+
+<script>
+// Tabs
+function openLink(evt, linkName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("myLink");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(linkName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+// Click on the first tablink on load
+document.getElementsByClassName("tablink")[0].click();
+</script>
+
+</body>
+</html>

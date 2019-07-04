@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<title>Fly With Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.myLink {display: none}
+</style>
+<body class="w3-light-grey">
+
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-border-bottom w3-xlarge">
+  <a href="main-page.html" class="w3-bar-item w3-button w3-text-black"><b></i>Fly With Us Airlines</b></a>
+  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"></a>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px; background-color:#FFEEEE">
+    <div class="w3-bar w3-#F98866">
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');">Check-in Flight</button>
+    </div>
+
+    <!-- Tabs -->
+    <div id="Flight" class="w3-container w3-padding-16 myLink" style="background-color: #FFEEEE">
+      <h3>Traveler Information</h3>
+      <p><button class="w3-button" style="background-color: #F98866">Confirmation No. 2B189H</button></p>
+      <div class="w3-row-padding" style="margin:0 -16px;">
+      <p>Traveler checking in for travel to Hawaii</p>
+      <table style="width:50%">
+    <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+            
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+            
+            tr:nth-child(even) {
+              background-color: #dddddd;
+            }
+            </style>
+                    <tr>
+                            <style>
+                                    table, th, td {
+                                      border: 1px solid black;
+                                    }
+                                    </style>
+                      <th>Select</th>
+                      <th>Traveler</th> 
+                      <th>Status</th>
+                    </tr>
+                    <tr>
+                      <th><div class="checkbox"><label><input type="checkbox"></label></div></th>
+                      <td>John Doe</td>
+                      <td>Not checked in</td>
+                    </tr>
+                    <tr>
+                      <th><div class="checkbox"><label><input type="checkbox"></label></div></th>
+                      <td>Isabelle Muniz</td>
+                      <td>Not checked in</td>
+                    </tr>
+                </table>
+                </div>
+    <h2>Please note:</h2>
+
+    <ul>
+      <li>Documents are required at the airport</li>
+      <li>This information is sent to the department of security</li>
+    </ul>  
+    <p><a href="main-page.html" button class="w3-button" style="background-color: #F98866">Back</button></a> <a href="third.html" button class="w3-button" style="background-color: #F98866">Continue</button></p></a>
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px;">
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+  <h5><a href="FAQS.html">FAQS</a></h5>
+  <div class="w3-xlarge w3-padding-16">
+  </div>
+</footer>
+
+<script>
+// Tabs
+function openLink(evt, linkName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("myLink");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(linkName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+// Click on the first tablink on load
+document.getElementsByClassName("tablink")[0].click();
+</script>
+
+</body>
+</html>
